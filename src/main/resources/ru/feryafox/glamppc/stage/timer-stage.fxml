@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.feryafox.glamppc.Controllers.TimerStageController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="В минутах (0 для отмены таймера)">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </Text>
+      <TextField fx:id="timerTextField" prefHeight="26.0" prefWidth="227.0" text="0">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </TextField>
+      <Button fx:id="setTimerBtn" mnemonicParsing="false" onAction="#setTimerBtnClick" text="Задать">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.feryafox.glamppc.Controllers.ModesEditorStageController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ChoiceBox prefHeight="25.0" prefWidth="165.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <Button mnemonicParsing="false" text="Добавить">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="Удалить">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Эффект: ">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <ChoiceBox prefWidth="150.0" />
+         </children></HBox>
+      <Separator layoutX="10.0" layoutY="159.0" prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <CheckBox mnemonicParsing="false" text="Уменьшить яркость">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Яркость: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Slider max="255.0" />
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Дополнительно: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <ChoiceBox prefWidth="150.0" />
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Скорость: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Slider max="255.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Палитра: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <ChoiceBox prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Масштаб: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Slider max="255.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

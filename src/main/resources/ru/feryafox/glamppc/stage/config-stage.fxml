@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.feryafox.glamppc.Controllers.ConfigStageController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Яркость и работа" textAlignment="CENTER" wrappingWidth="450.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Text>
+      <HBox alignment="CENTER" prefHeight="52.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Макс. яркость:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Text>
+            <Slider fx:id="brightnessSlider" max="255.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Slider>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="68.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Режим АЦП:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Text>
+            <ChoiceBox fx:id="ADCChoiceBox" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="96.0" prefHeight="68.0" prefWidth="600.0">
+         <children>
+            <CheckBox fx:id="modeAutoChangeCheckBox" mnemonicParsing="false" text="Автосмена режимов:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="96.0" prefHeight="68.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Работать от:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Text>
+            <ChoiceBox fx:id="workFromChoiceBox" prefHeight="25.0" prefWidth="50.0" />
+            <Text layoutX="235.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="до:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Text>
+            <ChoiceBox fx:id="worktoChoiceBox" layoutX="241.0" layoutY="19.0" prefHeight="25.0" prefWidth="50.0" />
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Конструкция" textAlignment="CENTER" wrappingWidth="450.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="49.0" prefHeight="52.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Макс. ток (мА): ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="maxCurrentTextField" promptText="1500" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="101.0" prefHeight="68.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Тип лампы:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Text>
+            <ChoiceBox fx:id="lampTypeChoiceBox" prefHeight="25.0" prefWidth="100.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="306.0" prefHeight="52.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Длина: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="lengthTextField" promptText="16" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="372.0" prefHeight="52.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ширина: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="widthTextField" prefHeight="25.0" prefWidth="138.0" promptText="16" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="295.0" prefHeight="68.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Тип матрицы: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Text>
+            <ChoiceBox fx:id="matrixTypeChoiceBox" prefHeight="25.0" prefWidth="100.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

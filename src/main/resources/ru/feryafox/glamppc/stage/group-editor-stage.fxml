@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.feryafox.glamppc.Controllers.GroupEditorStageController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="295.0" prefWidth="381.0">
+         <children>
+            <ListView fx:id="groupListView" prefHeight="277.0" prefWidth="227.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="381.0">
+         <children>
+            <TextField fx:id="setKeyField" promptText="Ключ" />
+            <Button fx:id="setKeyBtn" mnemonicParsing="false" text="Задать Ключ">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="toggleGroupBtn" mnemonicParsing="false" text="Откл. Группу" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="381.0">
+         <children>
+            <CheckBox fx:id="generalPalette" disable="true" mnemonicParsing="false" selected="true" text="Общая палитра">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="generalModes" disable="true" mnemonicParsing="false" selected="true" text="Общие Режимы">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="308.0" prefHeight="34.0" prefWidth="381.0">
+         <children>
+            <CheckBox fx:id="generalDawn" disable="true" mnemonicParsing="false" text="Общий расвет">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

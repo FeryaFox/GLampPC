@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.feryafox.glamppc.Controllers.SettingsStageController">
+   <children>
+      <CheckBox fx:id="disableSyncBtn" mnemonicParsing="false" text="Отключить синхронизацию">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </CheckBox>
+      <HBox alignment="CENTER" prefHeight="31.0" prefWidth="410.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Сетевой Интерфейс">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Text>
+            <ChoiceBox fx:id="netInterfaceChoiceBox" prefHeight="25.0" prefWidth="222.0" onAction="#netInterfaceChoiceBoxChange">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <CheckBox fx:id="startUpSyncBtn" layoutX="123.0" layoutY="15.0" mnemonicParsing="false" text="Синхронизация при старте">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </CheckBox>
+   </children>
+</VBox>

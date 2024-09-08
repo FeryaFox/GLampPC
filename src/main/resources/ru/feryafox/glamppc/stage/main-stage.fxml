@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.feryafox.glamppc.Controllers.MainStageController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="53.0" prefWidth="600.0">
+         <children>
+            <ChoiceBox fx:id="groupChoice" onAction="#handleGroupChoiceChange" prefWidth="150.0" />
+            <Button fx:id="editGroupBtn" mnemonicParsing="false" onAction="#onEditGroupBtnClick" text="Р. Групп">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="167.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="onBtn" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="100.0" prefWidth="100.0" text="Вкл">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="offBtn" mnemonicParsing="false" onAction="#offBtnClick" prefHeight="100.0" prefWidth="100.0" text="Выкл">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin></Button>
+            <Button fx:id="timerBtn" mnemonicParsing="false" onAction="#timerBtnClick" prefHeight="100.0" prefWidth="100.0" text="Таймер">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="prevModeBtn" mnemonicParsing="false" onAction="#prevModeBtnClick" prefHeight="70.0" prefWidth="70.0" text="Пред. Р.">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="nextModeBtn" mnemonicParsing="false" onAction="#nextModeBtnClick" prefHeight="70.0" prefWidth="70.0" text="След. Р.">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="605.0">
+         <children>
+            <ChoiceBox fx:id="modeChoice" onAction="#handleModeChoiceChange" prefHeight="25.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="53.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="syncBtn" mnemonicParsing="false" onAction="#onSyncBtnClick" text="Синхр.">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin></Button>
+            <Button fx:id="onServiceBtnClick" mnemonicParsing="false" onAction="#onServiceBtnClick" text="Сервис">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin></Button>
+            <Button fx:id="configBtn" mnemonicParsing="false" onAction="#onConfigBtnClick" text="Конфиг">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="modeEditBtn" mnemonicParsing="false" onAction="#onModeEditBtnClick" text="Режимы">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="paletteBtn" mnemonicParsing="false" onAction="#onPaletteBtnClick" text="Палитра">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="settingsBtn" mnemonicParsing="false" onAction="#onSettingsBtnClick" text="Настройки">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
