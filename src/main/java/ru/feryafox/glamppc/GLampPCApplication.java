@@ -30,6 +30,13 @@ public class GLampPCApplication extends Application {
     private NetAdapters netAdapters;
 
     private Stage primaryStage;
+    private Stage groupEditorStage = new Stage();
+    private Stage configStage = new Stage();
+    private Stage serviceStage = new Stage();
+    private Stage modeEditStage = new Stage();
+    private Stage paletteStage = new Stage();
+    private Stage settingsStage = new Stage();
+    private Stage timerStage = new Stage();
 
     @Override
     public void start(Stage primaryStage) throws IOException {
@@ -63,6 +70,16 @@ public class GLampPCApplication extends Application {
         primaryStage.setResizable(false);
         primaryStage.setScene(scene);
 
+        primaryStage.setOnCloseRequest(event -> {
+            this.settingsStage.close();
+            this.timerStage.close();
+            this.paletteStage.close();
+            this.serviceStage.close();
+            this.groupEditorStage.close();
+            this.configStage.close();
+            this.modeEditStage.close();
+        });
+
         primaryStage.show();
 
         MainStageController controller = fxmlLoader.getController();
@@ -90,6 +107,8 @@ public class GLampPCApplication extends Application {
 
             groupEditorStage.show();
             isGroupEditorStageOpen = true;
+
+            this.groupEditorStage = groupEditorStage;
         }
     }
 
@@ -107,6 +126,8 @@ public class GLampPCApplication extends Application {
 
             configStage.show();
             isConfigStageOpen = true;
+
+            this.configStage = configStage;
         }
     }
 
@@ -124,6 +145,8 @@ public class GLampPCApplication extends Application {
 
             serviceStage.show();
             isServiceStageOpen = true;
+
+            this.serviceStage = serviceStage;
         }
     }
 
@@ -141,6 +164,8 @@ public class GLampPCApplication extends Application {
 
             modeEdirStage.show();
             isModeEditStageOpen = true;
+
+            this.modeEditStage = modeEdirStage;
         }
     }
 
@@ -158,6 +183,8 @@ public class GLampPCApplication extends Application {
 
             paletteStage.show();
             isPaletteStageOpen = true;
+
+            this.paletteStage = paletteStage;
         }
     }
 
@@ -181,6 +208,8 @@ public class GLampPCApplication extends Application {
 
             settingsStage.show();
             isSettingsStageOpen = true;
+
+            this.settingsStage = settingsStage;
         }
     }
 
@@ -205,6 +234,8 @@ public class GLampPCApplication extends Application {
 
             timerStage.show();
             isTimerStageOpen = true;
+
+            this.timerStage = timerStage;
         }
     }
 
