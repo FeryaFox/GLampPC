@@ -3,7 +3,7 @@ package ru.feryafox.glamppc.Controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import ru.feryafox.glamppc.DataStorage.DataStorage;
-import ru.feryafox.glamppc.GLampWrapper;
+import ru.feryafox.glamppc.GLampWrapper.GLampWrapper;
 import ru.feryafox.glamppc.NetAdapters.NetAdapters;
 
 import java.util.ArrayList;

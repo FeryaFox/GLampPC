@@ -1,5 +1,5 @@
 set JAR_NAME=target\GLampPC-1.0-SNAPSHOT-shaded.jar
-set MAIN_CLASS=ru.feryafox.glamppc.MainApplication
+set MAIN_CLASS=ru.feryafox.glamppc.GLampPCApplication
 set APP_NAME=GLampPC
 
 jpackage ^

@@ -10,4 +10,6 @@ module ru.feryafox.glamppc {
     exports ru.feryafox.glamppc.Controllers;
     opens ru.feryafox.glamppc.Controllers to javafx.fxml;
     exports ru.feryafox.glamppc.DataStorage.AppData;
+    exports ru.feryafox.glamppc.GLampWrapper;
+    opens ru.feryafox.glamppc.GLampWrapper to javafx.fxml;
 }

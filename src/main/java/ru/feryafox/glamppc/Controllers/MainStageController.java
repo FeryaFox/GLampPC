@@ -2,17 +2,14 @@ package ru.feryafox.glamppc.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
-import ru.feryafox.GLamp.GLampData.GLampMode;
-import ru.feryafox.GLamp.GLampData.GLampModes;
 import ru.feryafox.glamppc.DataStorage.DataStorage;
-import ru.feryafox.glamppc.GLampWrapper;
-import ru.feryafox.glamppc.MainApplication;
+import ru.feryafox.glamppc.GLampWrapper.GLampWrapper;
+import ru.feryafox.glamppc.GLampPCApplication;
 
 import java.io.IOException;
-import java.util.stream.Collectors;
 
 public class MainStageController {
-    private MainApplication mainApp;
+    private GLampPCApplication mainApp;
     private GLampWrapper glampWrapper;
     private DataStorage dataStorage;
 
@@ -48,7 +45,7 @@ public class MainStageController {
         this.glampWrapper = glampWrapper;
     }
 
-    public void setMainApp(MainApplication mainApp) {
+    public void setMainApp(GLampPCApplication mainApp) {
         this.mainApp = mainApp;
     }
 

@@ -10,13 +10,14 @@ import ru.feryafox.glamppc.Controllers.MainStageController;
 import ru.feryafox.glamppc.Controllers.SettingsStageController;
 import ru.feryafox.glamppc.Controllers.TimerStageController;
 import ru.feryafox.glamppc.DataStorage.DataStorage;
+import ru.feryafox.glamppc.GLampWrapper.GLampWrapper;
 import ru.feryafox.glamppc.NetAdapters.Exceptions.CurrentAdapterIsOutsideArrayException;
 import ru.feryafox.glamppc.NetAdapters.NetAdapters;
 
 import java.io.IOException;
 
 
-public class MainApplication extends Application {
+public class GLampPCApplication extends Application {
     private boolean isGroupEditorStageOpen = false;
     private boolean isConfigStageOpen = false;
     private boolean isServiceStageOpen = false;
@@ -54,7 +55,7 @@ public class MainApplication extends Application {
         System.out.println(netAdapters.getCurrentIpAddress());
         gLampWrapper = new GLampWrapper(ds, netAdapters.getCurrentIpAddress());
 
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("stage/main-stage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(GLampPCApplication.class.getResource("stage/main-stage.fxml"));
 
         Scene scene = new Scene(fxmlLoader.load(), 600, 450);
         this.primaryStage = primaryStage;
@@ -77,7 +78,7 @@ public class MainApplication extends Application {
 
     public void openGroupEditorStage() throws IOException {
         if (!isGroupEditorStageOpen) {
-            FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("stage/group-editor-stage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(GLampPCApplication.class.getResource("stage/group-editor-stage.fxml"));
 
             Scene groupEditorScene = new Scene(fxmlLoader.load(), 380, 420);
             Stage groupEditorStage = new Stage();
@@ -94,7 +95,7 @@ public class MainApplication extends Application {
 
     public void openConfigStage() throws IOException {
         if (!isConfigStageOpen) {
-            FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("stage/config-stage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(GLampPCApplication.class.getResource("stage/config-stage.fxml"));
 
             Scene configScene = new Scene(fxmlLoader.load(), 450, 400);
             Stage configStage = new Stage();
@@ -111,7 +112,7 @@ public class MainApplication extends Application {
 
     public void openServiceStage() throws IOException {
         if (!isServiceStageOpen) {
-            FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("stage/service-stage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(GLampPCApplication.class.getResource("stage/service-stage.fxml"));
 
             Scene serviceScene = new Scene(fxmlLoader.load(), 400, 400);
             Stage serviceStage = new Stage();
@@ -128,7 +129,7 @@ public class MainApplication extends Application {
 
     public void openModeEditStage() throws IOException {
         if (!isModeEditStageOpen){
-            FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("stage/modes-editor-stage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(GLampPCApplication.class.getResource("stage/modes-editor-stage.fxml"));
 
             Scene modeEditScene = new Scene(fxmlLoader.load(), 400, 350);
             Stage modeEdirStage = new Stage();
@@ -145,7 +146,7 @@ public class MainApplication extends Application {
 
     public void openPaletteStage() throws IOException {
         if (!isPaletteStageOpen){
-            FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("stage/palette-stage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(GLampPCApplication.class.getResource("stage/palette-stage.fxml"));
 
             Scene palatteScene = new Scene(fxmlLoader.load(), 400, 400);
             Stage paletteStage = new Stage();
@@ -162,7 +163,7 @@ public class MainApplication extends Application {
 
     public void openSettingStage() throws IOException {
         if (!isSettingsStageOpen){
-            FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("stage/settings-stage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(GLampPCApplication.class.getResource("stage/settings-stage.fxml"));
 
             Scene settingsScene = new Scene(fxmlLoader.load(), 400, 400);
             Stage settingsStage = new Stage();
@@ -185,7 +186,7 @@ public class MainApplication extends Application {
 
     public void openTimerStage() throws IOException {
         if (!isTimerStageOpen){
-            FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("stage/timer-stage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(GLampPCApplication.class.getResource("stage/timer-stage.fxml"));
 
             Scene timerScene = new Scene(fxmlLoader.load(), 250, 200);
             Stage timerStage = new Stage();

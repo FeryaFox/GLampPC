@@ -1,6 +1,5 @@
-package ru.feryafox.glamppc;
+package ru.feryafox.glamppc.GLampWrapper;
 
-import com.sun.source.tree.ArrayAccessTree;
 import ru.feryafox.GLamp.GLamp;
 import ru.feryafox.GLamp.GLampData.GLampMode;
 import ru.feryafox.GLamp.GLampData.GLampModes;
@@ -15,7 +14,7 @@ public class GLampWrapper {
     private ArrayList<GLamp> gLampList;
     private int currentGroupId;
 
-    GLampWrapper(DataStorage dataStorage, String localIp) {
+    public GLampWrapper(DataStorage dataStorage, String localIp) {
         this.dataStorage = dataStorage;
         createGLampList(localIp);
         this.currentGroupId = dataStorage.appData.selectedGroup;

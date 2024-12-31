@@ -3,11 +3,11 @@ package ru.feryafox.glamppc.Controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import ru.feryafox.glamppc.DataStorage.DataStorage;
-import ru.feryafox.glamppc.GLampWrapper;
-import ru.feryafox.glamppc.MainApplication;
+import ru.feryafox.glamppc.GLampPCApplication;
+import ru.feryafox.glamppc.GLampWrapper.GLampWrapper;
 
 public class TimerStageController {
-    private MainApplication mainApp;
+    private GLampPCApplication mainApp;
     private GLampWrapper glampWrapper;
     private DataStorage dataStorage;
 
@@ -22,7 +22,7 @@ public class TimerStageController {
         this.glampWrapper = glampWrapper;
     }
 
-    public void setMainApp(MainApplication mainApp) {
+    public void setMainApp(GLampPCApplication mainApp) {
         this.mainApp = mainApp;
     }
 
